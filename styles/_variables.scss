@@ -1,0 +1,44 @@
+// Base Font Size (for rem calculations)
+$html-font-size: 16px; // 16px is the default browser font size
+$base-font-size: 1rem; // Equivalent to 16px
+
+// Light Theme Colors
+$light-primary-color: #0078D7; // Bright blue
+$light-secondary-color: #00B294; // Bright green
+$light-accent-color: #FFB900; // Bright yellow
+$light-background-color: #E6E6E6; // Light gray
+$light-header-background-color: #F3F3F3; // Very light gray
+$light-text-color: #333333; // Dark gray
+$light-link-color: #0078D7; // Match primary color
+$light-button-background-color: #0078D7; // Match primary color
+$light-button-hover-color: #005EA6; // Darker blue for hover
+
+// Dark Theme Colors
+$dark-primary-color: #ffffff; // White
+$dark-secondary-color: #00B294; // Bright green
+$dark-accent-color: #FFB900; // Bright yellow
+$dark-background-color: #333333; // Dark gray
+$dark-header-background-color: #444444; // Darker gray
+$dark-text-color: #E6E6E6; // Light gray
+$dark-link-color: #0078D7; // Match primary color
+$dark-button-background-color: #555555; // Dark gray
+$dark-button-hover-color: #777777; // Lighter gray for hover
+
+// Fonts
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Frutiger-inspired font family
+$heading-font-weight: 600; // Semi-bold for headings
+
+// Spacing
+$base-spacing: 1rem; // Equivalent to 16px
+$small-spacing: 0.5rem; // Equivalent to 8px
+$large-spacing: 2rem; // Equivalent to 32px
+
+// Border Radius
+$border-radius: 0.25rem; // Equivalent to 4px
+
+// Shadows
+$box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); // Subtle shadow for a soft, floating effect
+
+// Transitions
+$transition-duration: 0.3s;
+$transition-ease: ease-in-out;

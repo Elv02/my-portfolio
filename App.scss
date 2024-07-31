@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  padding: 20px;
+  background-image: var(--background-image);
+  flex-grow: 1;
+}

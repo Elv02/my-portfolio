@@ -1,0 +1,37 @@
+@import '/src/styles/main.scss';
+
+.footer {
+  background-color: var(--header-background-color);
+  padding: $base-spacing;
+  text-align: center;
+  font-size: $base-font-size;
+  color: var(--text-color);
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: $small-spacing 0;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: $base-spacing;
+      margin-top: $small-spacing;
+
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: $base-font-size;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

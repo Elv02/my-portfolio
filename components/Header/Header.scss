@@ -1,0 +1,29 @@
+@import "/src/styles/main.scss";
+
+.header {
+  background-color: var(--background-color);
+  padding: $base-spacing;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-list {
+    display: flex;
+    gap: $base-spacing;
+
+    li {
+      list-style: none;
+
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: $base-font-size;
+        padding: $small-spacing $large-spacing;
+
+        &:hover {
+          color: var(--link-color);
+        }
+      }
+    }
+  }
+}

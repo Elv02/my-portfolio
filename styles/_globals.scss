@@ -1,0 +1,73 @@
+@import "variables";
+
+:root {
+  --primary-color: #{$light-primary-color};
+  --secondary-color: #{$light-secondary-color};
+  --accent-color: #{$light-accent-color};
+  --background-color: #{$light-background-color};
+  --header-background-color: #{$light-header-background-color};
+  --text-color: #{$light-text-color};
+  --link-color: #{$light-link-color};
+  --button-background-color: #{$light-button-background-color};
+  --button-hover-color: #{$light-button-hover-color};
+
+  --background-image: var(--light-background-image);
+}
+
+[data-theme="dark"] {
+  --primary-color: #{$dark-primary-color};
+  --secondary-color: #{$dark-secondary-color};
+  --accent-color: #{$dark-accent-color};
+  --background-color: #{$dark-background-color};
+  --header-background-color: #{$dark-header-background-color};
+  --text-color: #{$dark-text-color};
+  --link-color: #{$dark-link-color};
+  --button-background-color: #{$dark-button-background-color};
+  --button-hover-color: #{$dark-button-hover-color};
+
+  --background-image: var(--dark-background-image);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: $font-family;
+  font-size: $base-font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: calc($base-spacing / 2);
+  font-weight: $heading-font-weight;
+}
+
+p {
+  margin-bottom: $base-spacing;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: white;
+  padding: $small-spacing $large-spacing;
+  border: none;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  transition: background-color $transition-duration $transition-ease;
+
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+}
