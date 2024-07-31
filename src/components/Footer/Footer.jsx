@@ -24,14 +24,10 @@ const Footer = () => {
           <a href="mailto:laurenhoeft42@gmail.com">Email</a>
         </div>
         <p>
-          Photos of the Kitchener/Waterloo Area by{" "}
-          <a
-            href="https://commons.wikimedia.org/wiki/User:Ryan_Hodnett"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ryan Hodnett
-          </a>
+          <a href="https://wallpapers.com/wallpapers/abstract-blue-light-rays-background-9k4iqrr8wc9u7mn1.html">
+            Background images by wpsadm
+          </a>{" "}
+          on Wallpapers.com
         </p>
       </div>
     </footer>

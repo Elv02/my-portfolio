@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ThemeToggle.scss";
-import lightBackground from '/src/assets/images/light-background.jpg';
-import darkBackground from '/src/assets/images/dark-background.jpg';
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ onThemeChange }) => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ||
       (window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -14,15 +12,11 @@ const ThemeToggle = () => {
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  useEffect(() => {
-    document.documentElement.style.setProperty('--light-background-image', `url(${lightBackground})`);
-    document.documentElement.style.setProperty('--dark-background-image', `url(${darkBackground})`);
-  }, []);
+    onThemeChange(theme);
+  }, [theme, onThemeChange]);
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
   return (
