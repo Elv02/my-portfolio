@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Header.scss";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import "./Header.scss";
 
-const Header = () => {
+const Header = ({ onThemeChange }) => {
   return (
     <header className="header">
       <nav>
@@ -22,7 +22,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <ThemeToggle />
+      <ThemeToggle onThemeChange={onThemeChange} />
     </header>
   );
 };
