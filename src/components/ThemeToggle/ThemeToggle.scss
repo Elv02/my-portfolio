@@ -1,4 +1,4 @@
-@import '/src/styles/main.scss';
+@import '/src/styles/main';
 
 .theme-toggle {
   color: white;
@@ -11,6 +11,8 @@
     right: $small-spacing;
     width: 40px;
     height: 40px;
+    padding: $small-spacing;
+    margin: $small-spacing;
     border-radius: 50%;
     display: flex;
     justify-content: center;
