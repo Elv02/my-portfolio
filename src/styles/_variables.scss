@@ -42,3 +42,7 @@ $box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); // Subtle shadow for a soft,
 // Transitions
 $transition-duration: 0.3s;
 $transition-ease: ease-in-out;
+
+// Breakpoints
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
