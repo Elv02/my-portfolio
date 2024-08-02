@@ -7,9 +7,22 @@
   justify-content: space-between;
   align-items: center;
 
+  @include for-tablet {
+    padding: $large-spacing;
+  }
+
+  @include for-desktop {
+    padding: $base-spacing $large-spacing;
+  }
+
   .nav-list {
     display: flex;
+    flex-direction: column;
     gap: $base-spacing;
+
+    @include for-tablet {
+      flex-direction: row;
+    }
 
     li {
       list-style: none;
