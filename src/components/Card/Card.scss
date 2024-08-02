@@ -1,8 +1,10 @@
+@import "/src/styles/main";
+
 .card {
   background: var(--content-background-color);
   border-radius: 8px;
   padding-bottom: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow;
   overflow: hidden;
   transition: transform 0.3s ease, max-height 0.3s ease, width 0.3s ease, height 0.3s ease;
   cursor: pointer;
@@ -26,7 +28,7 @@
     max-height: none;
     z-index: 1000;
     cursor: default;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: $box-shadow;
   }
 
   .card-image {
