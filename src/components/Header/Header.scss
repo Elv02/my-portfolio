@@ -2,12 +2,14 @@
 
 .header {
   background-color: var(--header-background-color);
-  padding: 10px 20px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10; // Ensure the header stays on top
 
   &__container {
     @include flex-center;
@@ -22,6 +24,7 @@
     border: none;
     cursor: pointer;
     color: var(--text-color);
+    margin: $base-spacing;
 
     &:focus {
       outline: none;
