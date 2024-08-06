@@ -3,7 +3,7 @@
 .card {
   background: var(--content-background-color);
   border-radius: 8px;
-  padding-bottom: 8px;
+  padding-bottom: $base-spacing;
   box-shadow: $box-shadow;
   overflow: hidden;
   transition: transform 0.3s ease, max-height 0.3s ease, width 0.3s ease, height 0.3s ease;
@@ -52,20 +52,20 @@
     p {
       margin: 0;
     }
+  }
 
-    .indicator {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      color: var(--primary-color);
-      &:hover{
-        cursor: pointer;
-      }
+  .indicator {
+    @include flex-center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    &:hover{
+      cursor: pointer;
     }
   }
 
   .card-content {
+    @include flex-center;
+    flex-direction: column;
     padding: 20px;
     transition: opacity 0.3s ease;
     opacity: 1;
