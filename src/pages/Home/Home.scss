@@ -11,9 +11,10 @@
   &__hero {
     max-width: 600px;
     background: var(--content-background-color);
-    padding: 40px;
+    padding: $large-spacing;
+    margin: $large-spacing;
     border-radius: 8px;
-    box-shadow: var(--box-shadow);
+    box-shadow: $box-shadow;
     z-index: 1;
     text-align: center;
 
@@ -22,6 +23,7 @@
       width: 150px;
       height: 150px;
       margin-bottom: 20px;
+      box-shadow: $box-shadow;
     }
 
     &__title {

@@ -1,5 +1,13 @@
 @import '/src/styles/main.scss';
 
+
+h2 {
+  background: var(--content-background-color);
+  padding: $small-spacing;
+  border-radius: $small-spacing;
+  text-align: center;
+}
+
 .about {
   padding: 20px;
   max-width: 1200px;
