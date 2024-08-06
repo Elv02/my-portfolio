@@ -1,33 +1,31 @@
+@import "/src/styles/main";
+
 .App {
-  position: relative;
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-
-.bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Ensure background is behind all content */
-}
-
-.content-wrapper {
-  position: relative;
-  z-index: 1; /* Ensure content is on top of the background */
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 }
 
 main {
   flex-grow: 1;
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content-wrapper {
+    flex-grow: 1;
+    padding: var(--base-spacing);
+    overflow-y: auto; // Ensure the content-wrapper is scrollable
+  }
 }
