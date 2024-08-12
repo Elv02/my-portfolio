@@ -23,9 +23,11 @@
     top: 50%;
     left: 5%;
     transform: translate(0, -50%);
-    width: 90%;
-    height: 90%;
-    max-height: none;
+    width: auto; // Let the width adjust based on content
+    height: auto; // Let the height adjust based on content
+    max-height: 90%; // Ensure the card doesn't grow too large
+    max-width: 90%; // Ensure the card doesn't grow too large
+    padding: 20px; // Add padding to the expanded card
     z-index: 1000;
     cursor: default;
     box-shadow: $box-shadow;
