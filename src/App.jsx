@@ -9,8 +9,8 @@ import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 import "./App.scss";
 
-const lightBackground = "/src/assets/images/light-rays-background.webp";
-const darkBackground = "/src/assets/images/dark-rays-background.webp";
+const lightBackground = "/light-rays-background.webp";
+const darkBackground = "/dark-rays-background.webp";
 
 const App = () => {
   const [theme, setTheme] = useState(
